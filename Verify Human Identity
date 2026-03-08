@@ -1,16 +1,16 @@
-name: serdadu079@tria
+name: Verify Human Identity
 
 on:
   workflow_dispatch:
     inputs:
       agent_name:
-        description: 'finder'
+        description: 'serdadu079'
         required: true
-        default: 'finder'
+        default: 'serdadu079'
       agent_description:
-        description: 'finder'
+        description: 'serdadu079'
         required: true
-        default: 'finder AI Agent'
+        default: 'serdadu079 AI Agent'
 
 jobs:
   verify:
@@ -38,4 +38,4 @@ jobs:
 
       - name: Step 3 - Link Human to Agent
         run: |
-          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "finder", "description": "finder AI Agent"}'
+          node scripts/manualLinkHumanToAgent.js --challenge '{"name": "serdadu079", "description": "serdadu079 AI Agent"}'
